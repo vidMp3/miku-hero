@@ -1,17 +1,17 @@
 {
-  "name": "personaje-3d",
+  "name": "miku-hero",
   "private": true,
-  "version": "1.0.0",
+  "version": "0.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build && cp dist/index.template.html dist/index.html && rm dist/index.template.html",
-    "preview": "vite preview"
-  },
-  "dependencies": {
-    "three": "^0.180.0"
+    "build": "vite build",
+    "preview": "vite preview",
+    "deploy": "vite build && gh-pages -d dist"
   },
   "devDependencies": {
-    "vite": "^6.1.0"
+    "gh-pages": "^6.0.0",
+    "three": "^0.160.0",
+    "vite": "^5.0.0"
   }
 }
